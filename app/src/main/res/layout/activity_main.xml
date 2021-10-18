@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStartEnd_EditText"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/lMStartEnd_EditText"
+        android:ems="10"
+        android:hint="@string/hint_EditText_Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hintColorAdvice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txVw_Name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStartEnd_EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/lMStartEnd_EditText"
+        android:ems="10"
+        android:hint="@string/hint_EditText_Phone"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hintColorAdvice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txVw_Phone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStartEnd_EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/lMStartEnd_EditText"
+        android:ems="10"
+        android:hint="@string/hint_EditText_Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hintColorAdvice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txVw_Email"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStartEnd_EditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/lMStartEnd_EditText"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_EditText_Message"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textColorHint="@color/hintColorAdvice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txVw_Message"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStart_txVw"
+        android:layout_marginTop="40dp"
+        android:text="@string/chBox_Subscribe"
+        android:textSize="@dimen/fS_txVw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <TextView
+        android:id="@+id/txVw_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStart_txVw"
+        android:layout_marginTop="@dimen/lMTop_txVw"
+        android:fontFamily="sans-serif"
+        android:text="@string/txVw_Name"
+        android:textSize="@dimen/fS_txVw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <TextView
+        android:id="@+id/txVw_Phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStart_txVw"
+        android:layout_marginTop="@dimen/lMTop_txVw"
+        android:text="@string/txVw_Phone"
+        android:textSize="@dimen/fS_txVw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txVw_Name"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <TextView
+        android:id="@+id/txVw_Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStart_txVw"
+        android:layout_marginTop="@dimen/lMTop_txVw"
+        android:text="@string/txVw_Email"
+        android:textSize="@dimen/fS_txVw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txVw_Phone"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <TextView
+        android:id="@+id/txVw_Message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStart_txVw"
+        android:layout_marginTop="@dimen/lMTop_txVw"
+        android:text="@string/txVw_Message"
+        android:textSize="@dimen/fS_txVw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txVw_Email"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <TextView
+        android:id="@+id/txVw_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/lMStart_txVw"
+        android:layout_marginTop="24dp"
+        android:text="@string/txVw_url"
+        android:textSize="@dimen/fS_txVw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/bt_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/bt_Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_Confirm" />
+
+    <Button
+        android:id="@+id/bt_Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        android:text="@string/bt_Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

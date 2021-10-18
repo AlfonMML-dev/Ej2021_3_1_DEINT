@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fS_txVw">18sp</dimen>
+    <dimen name="lMTop_txVw">40dp</dimen>
+    <dimen name="lMStart_txVw">32dp</dimen>
+    <dimen name="lMStartEnd_EditText">16dp</dimen>
+</resources>

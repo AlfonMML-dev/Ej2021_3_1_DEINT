@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ejercicio 1 Constraint</string>
+    <string name="txVw_Name">Nombre</string>
+    <string name="txVw_Phone">Teléfono</string>
+    <string name="txVw_Email">E-mail</string>
+    <string name="txVw_Message">Mensaje</string>
+    <string name="hint_EditText_Name">Introduce tu nombre</string>
+    <string name="hint_EditText_Phone">Introduce tu teléfono</string>
+    <string name="hint_EditText_Email">Introduce tu correo</string>
+    <string name="hint_EditText_Message">Introduce un mensaje</string>
+    <string name="chBox_Subscribe">Subscribirse por E-mail</string>
+    <string name="txVw_url">https://google.com</string>
+    <string name="bt_Cancel">Cancelar</string>
+    <string name="bt_Confirm">Confirmar</string>
+</resources>
